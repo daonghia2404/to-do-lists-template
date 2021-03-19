@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Todo Lists Template</title>
+    <link rel="stylesheet" type="text/css" href="./assets/css/main.css">
+  </head>
+  <body>
+    <main class="app-main"> 
+      <div class="app-header flex flex-col justify-between">
+        <div class="header-user"><img src="./assets/icons/icon-user.svg" alt=""></div>
+        <div class="header-title">Your <br> Things</div>
+        <div class="header-date">Sep 5, 2015</div>
+        <div class="header-overlay flex flex-col justify-between"> 
+          <form class="header-filter app-form" action="#">
+            <div class="form-group">
+              <div class="form-item flex justify-end">
+                <select>
+                  <option value="#">All</option>
+                  <option value="#">Work</option>
+                  <option value="#">Music</option>
+                  <option value="#">Healthy</option>
+                  <option value="#">Life</option>
+                  <option value="#">Other</option>
+                </select>
+              </div>
+            </div>
+          </form>
+          <div class="header-overview">
+            <div class="header-tasks-group flex justify-end">
+              <div class="header-tasks">
+                <div class="task-value">24</div>
+                <div class="task-label">To do</div>
+              </div>
+              <div class="header-tasks">
+                <div class="task-value">15</div>
+                <div class="task-label">Completed</div>
+              </div>
+            </div>
+            <div class="header-progress flex items-center justify-end">
+              <div class="progress-circle">
+                <div class="circle-bar"></div>
+              </div>
+              <div class="progress-label">65% Done</div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="app-main-wrapper"> 
+        <div class="main-title flex items-center">
+          <div class="title">Tasks </div>
+          <div class="total">5</div>
+        </div>
+        <div class="main-lists tasks"> 
+          <div class="list-item flex items-center justify-between">
+            <div class="item-icon"> <img src="./assets/icons/icon-healthy.svg" alt=""></div>
+            <div class="item-info"> 
+              <div class="item-title">Lorem ipsum dolor sit amet.</div>
+              <div class="item-des">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam, veniam.</div>
+            </div>
+            <div class="item-time"> 
+              <div class="time-value">9am</div>
+              <div class="item-action flex items-center"> 
+                <div class="action-item check flex"><img src="./assets/icons/icon-check.svg" alt=""></div>
+                <div class="action-item delete flex"><img src="./assets/icons/icon-delete.svg" alt=""></div>
+              </div>
+            </div>
+          </div>
+          <div class="list-item flex items-center justify-between">
+            <div class="item-icon"> <img src="./assets/icons/icon-shoe.svg" alt=""></div>
+            <div class="item-info"> 
+              <div class="item-title">Lorem ipsum dolor sit amet.</div>
+              <div class="item-des">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam, veniam.</div>
+            </div>
+            <div class="item-time"> 
+              <div class="time-value">9am</div>
+              <div class="item-action flex items-center"> 
+                <div class="action-item check flex"><img src="./assets/icons/icon-check.svg" alt=""></div>
+                <div class="action-item delete flex"><img src="./assets/icons/icon-delete.svg" alt=""></div>
+              </div>
+            </div>
+          </div>
+          <div class="list-item flex items-center justify-between">
+            <div class="item-icon"> <img src="./assets/icons/icon-works.svg" alt=""></div>
+            <div class="item-info"> 
+              <div class="item-title">Lorem ipsum dolor sit amet.</div>
+              <div class="item-des">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam, veniam.</div>
+            </div>
+            <div class="item-time"> 
+              <div class="time-value">9am</div>
+              <div class="item-action flex items-center"> 
+                <div class="action-item check flex"><img src="./assets/icons/icon-check.svg" alt=""></div>
+                <div class="action-item delete flex"><img src="./assets/icons/icon-delete.svg" alt=""></div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="main-title flex items-center">
+          <div class="title">Completed </div>
+          <div class="total">1</div>
+        </div>
+        <div class="main-lists tasks"> 
+          <div class="list-item flex items-center justify-between">
+            <div class="item-icon"> <img src="./assets/icons/icon-life.svg" alt=""></div>
+            <div class="item-info"> 
+              <div class="item-title">Lorem ipsum dolor sit amet.</div>
+              <div class="item-des">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam, veniam.</div>
+            </div>
+            <div class="item-time"> 
+              <div class="time-value">9am</div>
+              <div class="item-action flex items-center"> 
+                <div class="action-item restore flex"><img src="./assets/icons/icon-restore.svg" alt=""></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+    <main class="app-main-edit"> 
+      <div class="app-header flex items-center justify-center"> <a class="header-back" href="#"><img src="./assets/icons/icon-arrow-left.svg" alt=""></a>
+        <div class="header-title">Add new thing</div>
+      </div>
+      <div class="app-icon"> <img src="./assets/icons/icon-edit.svg" alt=""></div>
+      <form class="app-form" action="#">
+        <div class="form-group">
+          <div class="form-item"> 
+            <input type="text" placeholder="Your tasks here">
+            <div class="form-error">Tasks is required</div>
+          </div>
+        </div>
+        <div class="form-group">
+          <div class="form-item"> 
+            <select>
+              <option value="#">Work</option>
+              <option value="#">Music</option>
+              <option value="#">Healthy</option>
+              <option value="#">Life</option>
+              <option value="#">Other</option>
+            </select>
+          </div>
+        </div>
+        <div class="form-group">
+          <div class="form-item"> 
+            <button type="submit">Add your thing</button>
+          </div>
+        </div>
+      </form>
+    </main>
+    <main class="app-main-delete flex items-center justify-center">
+      <form class="app-form" action="#">
+        <div class="form-title">Delete</div>
+        <div class="form-des">Are you sure want to delete this item? This action will be undone !</div>
+        <div class="form-group half">
+          <div class="form-item"> 
+            <button type="submit">Delete</button>
+          </div>
+          <div class="form-item"> 
+            <button type="submit">Cancel</button>
+          </div>
+        </div>
+      </form>
+    </main>
+    <script src="./assets/js/main.js"></script>
+  </body>
+</html>
